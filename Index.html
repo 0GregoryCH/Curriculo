@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="autor" content="Gregory Cruz">  <!--Autor-->
+    <meta name="keywords" content="html, ejemplo, aprender"> <!--KeyWords-->
+    <meta name="description" content="Nuestra primera página web"> <!--Descripcion-->
+    <title>Ejemplo HTML Clase 03</title>
+    <style>
+        h1 {color: blue; font-size: 42px;font-family: sans-serif; }
+    </style>
+    <title>Currículo</title>
+</head>
+
+<body>
+    <!-- Insertamos Comentarios-->
+    <header>
+        <h1>Página currículo</h1>
+        <nav>
+            <ul></ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <ol> <!--Lista Numerada-->
+                <li>Información Personal</li>
+                <ol> <!--Lista Numerada-->
+                    <li>Foto:</li>
+                    <img src="Imagen/Photo.png" alt="Photo" width="200" height="200">
+
+                    <!-- Mostrar un PDF en la misma página -->
+                    <li>CV Documento PDF:</li>
+                    <embed src="Documentos/CurriculumVitae_GregoryAntonyCruzHerrera.pdf" width="600" height="400" type="application/pdf">
+               
+
+                    <li>Información:</li>
+                    <ul> <!--Lista Viñetas-->
+                        <li type="square">Nombre: Gregory Antony Cruz Herrera</li>
+                        <li type="square">Cédula: 208000198</li>
+                        <li type="square">Nacimiento: 18/12/1999</li>
+                        <li type="square">Celular: 83564572</li>
+                        <li type="square">Dirección: Costa Rica, Alajuela, Grecia</li>
+                    </ul>
+                    <li>Títulos Académicos:</li>
+                    <ul> <!--Lista Viñetas-->
+                        <li type="circle">Bachillerato en Educación Media</li>
+                        <ul>
+                            <li type="square">Colegio Liceo San Roque</li>
+                        </ul>
+                        <li type="circle">Bachillerato Universitario en Ingeniería en Sistemas Computacionales</li>
+                        <ul>
+                            <li type="square">Universidad Tecnológica Costarricense (UTC)</li>
+                        </ul>
+                        <li type="circle">Inglés</li>
+                        <ul>
+                            <li type="square">Idioma Internacional "BELT"</li>
+                        </ul>
+                    </ul>
+                </ol>
+
+                <li>Experiencia Laboral</li>
+                <ol> <!--Lista Numerada-->
+                    <li>IT</li>
+                    <ul>
+                        <li type="square">Smith and Nephew (Zona Franca Coyol)</li>
+                    </ul>
+                    <li>Operario de Producción</li>
+                    <ul>
+                        <li type="square">Smith and Nephew (Zona Franca Coyol)</li>
+                    </ul>
+                    <li>Encargado de Punto de Venta</li>
+                    <ul>
+                        <li type="square">Panadería Trigo Celeste</li>
+                    </ul>
+                </ol>
+
+                <li>Temas de Interés</li>
+                <ol> <!--Lista Numerada-->
+                    <li>Video: YouTube</li>
+                    <a href="https://youtu.be/RK09Kw2iI1g?feature=shared">Video YouTube</a>
+
+                    <!-- Mostrar un PDF en la misma página -->
+                    <li>Carta de Recomendación Documento PDF:</li>
+                    <embed src="Documentos/CartaRecomendacion.pdf" width="600" height="400" type="application/pdf">
+                                    
+                </ol>
+
+                <li>Resumen</li>
+                <ol> <!--Lista Numerada-->
+                    <h2>Tabla</h2>
+                    <table border="1">
+                        <caption>Tabla Resumen</caption>
+                        <thead>
+                            <tr> <!--Filas-->
+                                <td colspan="3">Gregory Antony Cruz Herrera</td><!--Columnas-->
+                            </tr>
+                            <tr> <!--Filas-->
+                                <th>Intereses</th>
+                                <th>Habilidades/Fortalezas</th> <!--Columnas-->
+                                <th>Conocimientos</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr> <!--Filas-->
+                                <td colspan="1">Desarrollo de Videojuegos</td> <!--Columnas-->
+                                <td colspan="1" rowspan="1">Productivo</td>
+                                <td colspan="1" rowspan="4"><p>Unreal Engine, Plugins, Blueprints, Visual Studio, SQL Server, GitHub, C++, C#, Python, Java, JavaScript, HTML, CSS, SQL, Bases de Datos, Mantenimiento de Hardware y Software, Ciberseguridad, Redes y Conexión.</p></td>
+                            </tr>
+                            <tr> <!--Filas-->
+                                <td colspan="1">AI</td> <!--Columnas-->
+                                <td colspan="1" rowspan="1">Responsable</td>
+                            </tr>
+                            <tr> <!--Filas-->
+                                <td colspan="1">Ciberseguridad</td> <!--Columnas-->
+                                <td colspan="1" rowspan="1">Proactivo</td>
+                            </tr>
+                            <tr>
+                                <td>Tecnología</td>
+                                <td>Paciente</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                        </tfoot>
+                    </table>
+                </ol>
+            </ol>
+        </section>
+
+    </main>
+    <footer>
+    </footer>
+</body>
+</html>
